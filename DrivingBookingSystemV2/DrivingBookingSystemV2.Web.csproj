@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>234ec418-9b63-4954-9c7b-9e6cbf1c81e7</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.14" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DrivingBookingSystemV2.Application\DrivingBookingSystemV2.Application.csproj" />
+    <ProjectReference Include="..\DrivingBookingSystemV2.Domain\DrivingBookingSystemV2.Domain.csproj" />
+    <ProjectReference Include="..\DrivingBookingSystemV2.Infrastructure\DrivingBookingSystemV2.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
