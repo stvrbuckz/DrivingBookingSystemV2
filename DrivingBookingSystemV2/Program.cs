@@ -1,3 +1,8 @@
+using DrivingBookingSystemV2.Application.Areas.Identity.Entities;
+using DrivingBookingSystemV2.Web.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,7 +11,19 @@ builder.Services.AddControllersWithViews();
 // Add connection string
 var connectionString = builder.Configuration.GetConnectionString("Default") ?? throw new InvalidOperationException("Connection string 'Default' not found.");
 
-builder.Services.AddDbContext<ApplicationDbContext>();
+// Add db context
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(connectionString);
+});
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = false;
+    options.SignIn.RequireConfirmedEmail = false;
+    options.SignIn.RequireConfirmedPhoneNumber = false;
+})
+    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
 var app = builder.Build();
