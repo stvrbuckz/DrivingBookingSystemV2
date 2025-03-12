@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DrivingBookingSystemV2.Domain\DrivingBookingSystemV2.Domain.csproj" />
   </ItemGroup>
 
