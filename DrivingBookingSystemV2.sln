@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrivingBookingSystemV2.Web", "DrivingBookingSystemV2\DrivingBookingSystemV2.Web.csproj", "{6735D7A9-790C-4734-8293-702C4979830B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrivingBookingSystemV2.Web", "DrivingBookingSystemV2\DrivingBookingSystemV2.Web.csproj", "{6735D7A9-790C-4734-8293-702C4979830B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrivingBookingSystemV2.Application", "DrivingBookingSystemV2.Application\DrivingBookingSystemV2.Application.csproj", "{43C003B7-7B34-4FE5-9C9C-76DF513B8DFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrivingBookingSystemV2.Application", "DrivingBookingSystemV2.Application\DrivingBookingSystemV2.Application.csproj", "{43C003B7-7B34-4FE5-9C9C-76DF513B8DFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrivingBookingSystemV2.Domain", "DrivingBookingSystemV2.Domain\DrivingBookingSystemV2.Domain.csproj", "{CADB146D-1503-4871-8190-5BB58B6F4E11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrivingBookingSystemV2.Domain", "DrivingBookingSystemV2.Domain\DrivingBookingSystemV2.Domain.csproj", "{CADB146D-1503-4871-8190-5BB58B6F4E11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrivingBookingSystemV2.Infrastructure", "DrivingBookingSystemV2.Infrastructure\DrivingBookingSystemV2.Infrastructure.csproj", "{555B5FEA-1113-400D-B33A-157C09C95252}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrivingBookingSystemV2.Infrastructure", "DrivingBookingSystemV2.Infrastructure\DrivingBookingSystemV2.Infrastructure.csproj", "{555B5FEA-1113-400D-B33A-157C09C95252}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
